@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+
+
+.navbar-nav>li:hover{
+    background-color: #f8f9fb;
+
+}
+.navbar-brand{
+    margin-top: -8px;
+    transition: .3s;
+}
+.navbar-brand:hover{
+    opacity: .5;
+}
+.navbar{
+    min-height: 100px;
+}
+.navbar-default .navbar-nav>li:hover{
+    border-bottom: 3px #49cbcd solid;
+}
+.navbar-default .navbar-nav>li>a{
+    padding: 15px 20px;
+    color: #484c55;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav>li:hover a{
+    color: #49cbcd;
+}
+.item img{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li {
+        height: 100px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .navbar-default .navbar-nav>li a{
+        margin-top: 25px;
+    }
+    .navbar-brand{
+        margin-top: 19px;
+    }
+}
+
+.navbar-default{
+    background-color: white;
+    background-image: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+.carousel-indicators {
+    display: none;
+}
+.carousel-caption h3{
+    font-size: 60px;
+    margin-bottom: 45px;
+}
+.carousel-caption p{
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+.carousel-caption{
+    top: 20%;
+}
+.carousel-caption a{
+    display: inline-block;
+    border: 3px white solid;
+    border-radius: 5px;
+    height: 63px;
+    line-height: 63px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-underline: none;
+    font-size: 20px;
+    padding-left: 42px;
+    padding-right: 42px;
+
+}
+.carousel-section{
+    margin-bottom: 110px;
+}
+.team_h4{
+    color: #4e525d;
+    font-size: 42px;
+}
+.team_h4_block{
+    margin-bottom: 140px;
+}
+.circle{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eeeef0;
+    margin-bottom: 50px;
+}
+.by_team h2,h5,.description{
+    color: #4e525d;
+}
+.teammates_block{
+    margin-bottom: 105px;
+}
+.buy_cards_block{
+    background-color: #f1f1f1;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.card:first-of-type li{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #8c9299;
+    border-bottom: 1px solid #ecf0f1;
+}
+.card:first-of-type li:first-of-type{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #485460;
+    border: none;
+}
+.card:first-of-type li:nth-child(2){
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #f8f9fb;
+    border-bottom: 1px solid #ecf0f1;
+}
