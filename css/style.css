@@ -127,11 +127,11 @@
     display: block;
     position: absolute;
     left: 40%;
-    top: 29%;
+    top: 100%;
     transition: 0.3s;
 }
-.circle:hover .circle:after{
-    color: black;
+.circle:hover.circle:after{
+    top: 29%;
 }
 .by_team h2,h5,.description{
     color: #4e525d;
@@ -331,4 +331,17 @@
 }
 .send-button:hover{
     background-color: #87f3f5;
+}
+.card-div{
+    margin-bottom: 30px;
+}
+.buy_cards_block{
+    box-sizing: border-box;
+}
+@media (min-width: 280px),(max-width: 768px){
+    .item img{
+        min-width: 1440px;
+        object-fit:cover;
+        min-height: 680px;
+    }
 }
