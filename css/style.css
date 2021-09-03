@@ -91,7 +91,11 @@
     font-size: 20px;
     padding-left: 42px;
     padding-right: 42px;
-
+    transition: 0.3s;
+}
+.carousel-caption a:hover{
+    background-color: white;
+    color: black;
 }
 .carousel-section{
     margin-bottom: 110px;
@@ -110,6 +114,24 @@
     border-radius: 50%;
     background-color: #eeeef0;
     margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.circle:after {
+    content: "+";
+    font-weight: 900;
+    font-size: 55px;
+    color: #f46d6d;
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 29%;
+    transition: 0.3s;
+}
+.circle:hover .circle:after{
+    color: black;
 }
 .by_team h2,h5,.description{
     color: #4e525d;
@@ -122,13 +144,17 @@
     padding-top: 120px;
     padding-bottom: 100px;
 }
-.card:first-of-type li{
+.card li{
     width: 100%;
     height: 45px;
     line-height: 45px;
     text-align: center;
     color: #8c9299;
+    background-color: white;
     border-bottom: 1px solid #ecf0f1;
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 0;
 }
 .card:first-of-type li:first-of-type{
     width: 100%;
@@ -136,16 +162,173 @@
     line-height: 75px;
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 23px;
     background-color: #485460;
     border: none;
+    transition: 0.3s;
 }
 .card:first-of-type li:nth-child(2){
     width: 100%;
     height: 68px;
     line-height: 68px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #f8f9fb;
     border-bottom: 1px solid #ecf0f1;
+}
+.list-of-cards{
+    display: inline-block;
+}
+.buy_now_sec{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #f8f9fb;
+}
+.buy_now_sec a{
+    height: 40px;
+    width: 170px;
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+    line-height: 40px;
+    background-color: #788492;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.card{
+    margin-bottom: 0;
+}
+
+.card-div:hover .card:first-of-type li:first-of-type{
+    background-color: #49cbcd;
+}
+
+.card-div:hover .buy_now_sec a{
+    background-color: #49cbcd;
+}
+.contact_us{
+    background-image: url("../images/Layer 28.png");
+    background-size: cover;
+    padding: 105px 0 100px;
+    text-align: center;
+}
+.contact_h4{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 115px;
+}
+.social-networks{
+    text-align: left;
+}
+.socnet-h5{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 16px;
+}
+.socnet-p{
+    font-size: 15px;
+    color: #949494;
+    line-height: 22px;
+    margin-bottom: 45px;
+}
+.soc_icons{
+    display: flex;
+    margin-bottom: 22px;
+}
+.soc_icons a{
+    margin-right: 14px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    line-height: 42px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: 0.2s;
+}
+.fa-facebook-f{
+    color: white;
+    font-size: 22px;
+}
+.fa-twitter{
+    color: white;
+    font-size: 17px;
+}
+.fa-google-plus-g{
+    color: white;
+    font-size: 20px;
+}
+.contact_block{
+    margin: auto;
+}
+.soc_icons a:first-of-type:hover{
+    margin-top: -3px;
+    background-color: #3b5997;
+    border: #3b5997;
+}
+.soc_icons a:nth-child(2):hover{
+    margin-top: -3px;
+    background-color: #3ec2f3;
+    border: #3ec2f3;
+}
+.soc_icons a:nth-child(3):hover{
+    margin-top: -3px;
+    background-color: #e44c41;
+    border: #e44c41;
+}
+.last_soc_p{
+    color: #bface2;
+    font-size: 11px;
+    line-height: 25px;
+
+}
+.soc_block_mail_a{
+    text-decoration: none;
+    text-underline: none;
+    color: #bface2;
+    font-size: 11px;
+    line-height: 25px;
+}
+.contact-form{
+    text-align: end;
+}
+.contact-form .input{
+}
+.name{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 18px;
+}
+.email{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 18px;
+}
+.message{
+    width: 100%;
+    height: 180px;
+    padding-top: 22px;
+    padding-left: 18px;
+    margin-top: 30px;
+    text-align: left;
+}
+.send-button{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    background-color: #49cbcd;
+    color: white;
+    margin: 30px 15px 0;
+    font-size: 16px;
+    float: right;
+    transition: 0.3s;
+}
+.send-button:hover{
+    background-color: #87f3f5;
 }
